@@ -1,0 +1,51 @@
+.header{
+    grid-area: header;
+    background-color: whitesmoke;
+}
+.sidebar{
+    grid-area: sidebar;
+    color: whitesmoke;
+    background-color: rgb(64, 137, 206);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10% 30% 60%;
+    font-family: 'Rubik', sans-serif;
+}
+.main{
+    grid-area: main;
+    background-color: rgb(209, 208, 208);
+}
+body{
+    display: grid;
+    overflow: auto;
+    min-height: 100vh;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 15% 85%;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main";
+    margin: 0px;
+    padding: 0px;
+}
+
+svg {
+    color: white; /* Or any color of your choice. */
+  }
+
+.sb-brand{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 3fr;
+    gap: 3px;
+    font-weight: bold;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+.sb-nav{
+    border: 1px solid red;
+}
+.sb-setting{
+    border: 1px solid red;
+}
