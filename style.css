@@ -9,8 +9,9 @@
     padding: 20px;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 10% 30% 60%;
+    grid-template-rows: 10% 40% 20%;
     font-family: 'Rubik', sans-serif;
+
 }
 .main{
     grid-area: main;
@@ -36,16 +37,38 @@ svg {
 .sb-brand{
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     gap: 3px;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.15em;
     justify-content: center;
     align-items: center;
+
 }
 .sb-nav{
-    border: 1px solid red;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 4fr;    
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 0px;
+    align-content: center;
 }
 .sb-setting{
-    border: 1px solid red;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 4fr;    
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 0px;
+    align-content: center;
+}
+.nav-img{
+    height: 24px;
+    width: px;
+}
+.nav-txt{
+    margin: 10px 1px;
 }
