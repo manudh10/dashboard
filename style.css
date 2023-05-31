@@ -1,6 +1,9 @@
 .header{
     grid-area: header;
     background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 40% 60%;
 }
 .sidebar{
     grid-area: sidebar;
@@ -71,4 +74,77 @@ svg {
 }
 .nav-txt{
     margin: 10px 1px;
+}
+.hdr-top{
+    display: grid;
+    /*grid-template-columns: 10% 50% 10% 10% 20%;*/
+    grid-template-columns: 2.75fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+}
+.hdr-bottom{
+    border: 1px solid magenta;
+    display: grid;
+    grid-template-columns: 2.25fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+}
+.hdr-top-left{
+    display: flex; 
+}
+.hdr-top-right{
+    display:flex;
+
+    align-items: center;
+}
+.hdr-src{
+    padding-left: 30px;
+}
+#src-icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+#src-input{
+    width: 700px;
+    min-width: 25px;
+    max-width: 700px;
+    border-radius: calc(0.5 * 30px);
+    padding: 0px 10px;
+}
+#ico-profile{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.name{
+    margin-left: 10px;
+}
+#ico-name{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+.hdr-btm-left{
+    border: 1px solid blue;
+}
+.hdr-btm-right{
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-hdr{
+    margin: 0px 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    background-color: rgb(52, 122, 226);
+    color: white;
+    height: 25px;
+    width: 90px;
+    border-radius: calc(0.5 * 30px);
+    border: none;
 }
