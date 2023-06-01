@@ -84,7 +84,7 @@ svg {
     align-items: center;
 }
 .hdr-bottom{
-    border: 1px solid magenta;
+
     display: grid;
     grid-template-columns: 2.25fr 1fr;
     grid-template-rows: auto;
@@ -127,10 +127,13 @@ svg {
     font-weight: bold;
 }
 .hdr-btm-left{
-    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto auto;
+    align-items: center;
 }
 .hdr-btm-right{
-    border: 1px solid green;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -147,4 +150,21 @@ svg {
     width: 90px;
     border-radius: calc(0.5 * 30px);
     border: none;
+}
+
+#ico-pro-large{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 65px;
+    width: 65px;
+    margin-left: auto;
+}
+#lbl-welcome{
+    font-family: 'Rubik', sans-serif;
+    font-size: small;
+}
+#lbl-name-large{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: larger;
 }
