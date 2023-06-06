@@ -19,6 +19,11 @@
 .main{
     grid-area: main;
     background-color: rgb(209, 208, 208);
+    padding: 25px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 75% 25%;
+    font-family: 'Rubik', sans-serif;
 }
 body{
     display: grid;
@@ -167,4 +172,70 @@ svg {
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
     font-size: larger;
+}
+.main-left{
+    border: 1px solid red;
+}
+.main-right{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    gap: 5px;
+}
+.main-rt-content{
+    overflow: auto;
+}
+.lbl-rt{
+    font-family: 'Rubik', sans-serif;
+    font-size: larger;
+    margin: 5px;
+}
+.rt-card{
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    border-radius: calc(0.5 * 30px);
+    height: auto;
+    width: auto;
+    background-color: whitesmoke;    
+}
+.rt-card h4{
+    font-family: 'Rubik', sans-serif;
+    font-size: small;
+    font-weight: bold;
+    margin: 0px;
+}
+.rt-card p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    padding: 0px;
+    padding-bottom: 0.8rem;
+    transition: var(--base-transition);
+    margin: 0.3rem 0 0.6rem;
+    margin-bottom: 8px;
+    color: rgb(106, 114, 114);
+    border-bottom: 1px solid #b1b4b8;
+}
+.trend{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.trend img{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 32px;
+    width: 32px;
+    margin-right: 2px;
+}
+.trend h3{
+    margin: 0px;
+    font-family:'Courier New', Courier, monospace;
+}
+.trend label{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    color: rgb(106, 114, 114);
 }
