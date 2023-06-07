@@ -29,6 +29,7 @@ body{
     display: grid;
     overflow: auto;
     min-height: 100vh;
+    
     grid-template-rows: 20% 80%;
     grid-template-columns: 15% 85%;
     grid-template-areas:
@@ -174,13 +175,15 @@ svg {
     font-size: larger;
 }
 .main-left{
-    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
 }
 .main-right{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 50% 50%;
-    gap: 5px;
+    gap: 25px;
 }
 .main-rt-content{
     overflow: auto;
@@ -197,7 +200,8 @@ svg {
     border-radius: calc(0.5 * 30px);
     height: auto;
     width: auto;
-    background-color: whitesmoke;    
+    background-color: whitesmoke; 
+    overflow-y: scroll;   
 }
 .rt-card h4{
     font-family: 'Rubik', sans-serif;
@@ -238,4 +242,63 @@ svg {
     font-family:'Courier New', Courier, monospace;
     font-size: 0.8rem;
     color: rgb(106, 114, 114);
+}
+
+#projects{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0px;
+}
+.card {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 350px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 10px;
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 75% 25%;
+
+    justify-content: space-around;
+    align-items: center;
+    /*text-align: center;
+    background: #b0c4b1;*/
+    background-color: whitesmoke; 
+    color: #2b2839;
+    /*border-bottom: 6px solid #d8cefe;*/
+}
+
+.link-ico{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: auto;
+}
+.border-card {
+    /*border: 3px solid #6b705c;*/
+    border: none;
+    border-left: 8px solid hsl(49, 82%, 45%);
+    border-radius: 20px;
+}
+.card-desc p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    color: rgb(106, 114, 114);
+    margin: 10px 2px;
+}
+.card-desc h2{
+    margin: 10px 2px;;
+}
+/*.card h2:hover{
+    color: #344e41;
+    font-size: 20pt;
+    text-shadow: 2px 2px;
+}*/
+.avatar {
+    width: 110px;
+}
+.link-prev-src{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
 }
